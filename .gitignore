@@ -1,0 +1,26 @@
+#Typescript
+*.js
+*.js.map
+*.js.min
+*.tsbuildinfo
+
+#Include lib js files
+!src/public/lib/**/*.js
+
+#General
+node_modules
+bin
+.DS_Store
+
+#Security
+*.env
+*.csr
+*.key
+*.pem
+*.crt
+
+# Webstorm
+.idea
+
+#VSCode
+.vscode

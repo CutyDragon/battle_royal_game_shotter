@@ -1,0 +1,51 @@
+@html.extend('Shared/_layout', function(model){
+
+    @html.block('content', function(model){
+
+        @{
+            model.title = "About";
+        }
+
+        <div class="col-md-11 container">
+            <br/>
+            <h1>About</h1>
+            <hr/>
+            <p>
+                Project Title: @model.config.name<br/>
+                Version: @model.config.version @model.config.versionTitle <br/>
+                Release Date: @model.config.versionRelease <br/>
+                Description: @model.config.description
+            </p>
+            <br/>
+
+            <h3>Developers</h3>
+            <hr/>
+            <div class="row">
+
+                @model.config.developers.forEach(function(item){
+
+                    <div class="bg-blue p-1"  style="margin: auto; width: 20%">
+                        <div class="container">
+                            <h4 class="text-white pt-3">@item.name</h4>
+                            <p style="color: rgb(198, 198, 198)">
+                                Major: @item.major<br/>
+                                Expected Graduation: @item.year<br/>
+                                Website: @((item.website !== "") ? <a class="text-white" href="@item.website">Visit</a> : <text>NA</text>)<br>
+                                Github: @((item.github !== "") ? <a class="text-white" href="@item.github">Visit</a> : <text>NA</text>)
+                            </p>
+                        </div>
+                        <div class="bg-white" style="height: 30vh; background-image: url(@item.image); background-size: cover; background-repeat: no-repeat"></div>
+
+                        <div class="container">
+                            <p class="text-white pt-2">@((item.bio !== "") ? <text>Bio:<br> @item.bio</text> : "")</p>
+                        </div>
+                    </div>
+
+                })
+
+            </div>
+
+        </div>
+    <br/>
+    })
+})

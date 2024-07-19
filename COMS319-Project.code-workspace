@@ -1,0 +1,50 @@
+{
+    "folders": [
+        {
+            "name": "Source",
+            "path": "."
+        },
+        {
+            "name": "Test",
+            "path": "test"
+        },
+        {
+            "name": "Documentation",
+            "path": "documentation"
+        },
+        {
+            "name": "Scripts",
+            "path": "scripts"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.env": true,
+            "**/.gitignore": true,
+            "**/COMS319-Project.code-workspace": true,
+            "**/package-lock.json": true,
+            "**/type-defs": true,
+            "**/node_modules": true,
+            "**/test": true,
+            "**/scripts": true,
+            "**/documentation": true,
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/*.js": {
+                "when": "$(basename).ts"
+            },
+            "**/*.js.m*": true,
+            "**/.classpath": true,
+            "**/.project": true,
+            "**/.settings": true,
+            "**/.factorypath": true,
+	    "**/.editorconfig": true,
+	    "**/.gitlab-ci.yml": true, 
+	    "**/tsconfig.json": true,
+       	    "**/tsconfig.tsbuildinfo": true
+	}
+    }
+}
