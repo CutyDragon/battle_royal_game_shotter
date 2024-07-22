@@ -1,6 +1,5 @@
-# B.R.T.D. (Battle Royal Top Down Shooter)
-
-B.R.T.D is a game inspired from the many popular battle royal games.
+Battle Royal Top Down Shooter
+BRTD is a game inspired from the many popular battle royal games.
 
 ## Live Instances
  - Newest commit: [https://staging-cs319.herokuapp.com](https://staging-cs319.herokuapp.com)
